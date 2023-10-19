@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  appearance: none;
+  background-color: palegreen;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 6px 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+button:focus-visible {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+#square {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: yellow;
+  margin-inline: auto;
+  margin-block: 1em;
+}
+
+#square.blue {
+  background-color: blue;
+}
+
+#square.orange {
+  background-color: orange;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+  margin-inline: auto;
+  margin-block: 16px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+td:hover {
+  background-color: #ff9;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
